@@ -1,14 +1,15 @@
-{% extends "master.html" %}
+{% extends "twocolumn.html" %}
 
 {% block title %}search{% endblock %}
 
-{% block body %}
+{% block form1 %}
 <h1> Search book </h1>
 <form action= {{ link }} method="post">
   <input type="text" name="book_id"></input>
   <input type="submit" value="search"></input>
 </form>
-
+{% endblock %}
+{% block form2 %}
 <h1> Search Author </h1>
 <form action= "/search/authors/" method="post">
   <input type="text" name="author_name"></input>

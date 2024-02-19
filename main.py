@@ -276,14 +276,6 @@ def generate_relevance_table( book, depth = map_depth_cap,  size = map_size_cap,
 
     return relevanceTable
 
-"""
-Testing
-"""
-@app.route('/searchtest/')
-def search_test():
-    return flask.render_template('searchtest.html')
-
-
 
 """
 MAIN

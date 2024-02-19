@@ -1,15 +1,18 @@
-{% extends "master.html" %}
+{% extends "twocolumn.html" %}
 
 {% block title %}Account{% endblock %}
 
-{% block body %}
+{% block form1 %}
 <h1> sign up </h1>
 <form action="/account/signup/" method="post">
   <input type="text" name="username" value="username" size="20"></input>
   <input type="text" name="password" value="password" size="12"></input>
   <input type="submit" value="sign up"></input>
 </form>
+{% endblock %}
 
+
+{% block form2 %}
 <h1> login </h1>
 <form action="/account/login/" method="post">
   <input type="text" name="username" value="username" size="20"></input>
