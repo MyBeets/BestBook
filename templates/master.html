@@ -17,6 +17,12 @@
   <li><a href="/account/">Account</a></li>
   <li><a href="/add/">Add</a></li>
   <li><a href="/search/">Search</a></li>
+  <div class="topsearch">
+    <form action= "/search/results/" method="post">
+      <input type="text" name="book_id"></input>
+      <input type="submit" value="search"></input>
+    </form>
+  </div>
 </ul>
 
 {% block body %}{% endblock %}

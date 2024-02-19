@@ -7,10 +7,12 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--back);
   color: var(--dark);
 
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -23,10 +25,15 @@ li a {
   display: block;
   color: var(--back);
   text-align: center;
-  padding: 16px;
+  padding: 18px;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+}
+
+.topsearch{
+  margin: 18px;
+  display: flex;
 }
 
 a{
@@ -35,4 +42,15 @@ a{
 
 li a:hover {
   background-color: var(--primaryhighlight);
+}
+textarea {
+  display: block;
+}
+
+input[type=submit] {
+  display: block;
+}
+
+input[type=submit][value=search] {
+  display: inline;
 }

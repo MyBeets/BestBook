@@ -3,6 +3,14 @@
   width: 50%;
 }
 
+.row {
+  display: flex;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";

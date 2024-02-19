@@ -22,6 +22,7 @@
 {% endblock %}
 
 {% block body %}
+<h1>{{ book._id }}</h1>
 
 <div id="map"></div>
 
@@ -29,10 +30,5 @@
 data-bookid={{book._id}} 
 data-mappinginstructions={{ mapString }}>
 </script>
-
-<h1>{{ book._id }}</h1>
-{% for e in relevanceTable: %}
-    <h2> {{ e }} </h2>
-{% endfor %}
 
 {% endblock %}
