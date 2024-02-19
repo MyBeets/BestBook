@@ -1,0 +1,21 @@
+{% extends "master.html" %}
+
+{% block head %}
+{{ super() }}
+<link type="text/css" rel="stylesheet"
+href="{{ url_for('static', filename='add.css')}}" /> 
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+<div class="row">
+  <div class="column">
+   {% block form1 %}{% endblock %}
+  </div>
+
+  <div class="column">
+    {% block form2 %}{% endblock %}
+  </div>
+</div>
+
+{% endblock %}
