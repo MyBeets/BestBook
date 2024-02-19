@@ -1,6 +1,12 @@
 #map { 
+
+    position: fixed;
+    top: 20%;
+    left: 10%;
+
 	height: 75vh;
 	width: 75vw; 
+
 }
 .leaflet-container {
     background: black;
