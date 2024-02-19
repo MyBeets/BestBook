@@ -1,17 +1,33 @@
 {% extends "twocolumn.html" %}
 
 {% block title %}Home{% endblock %}
+{% block head %}
+{{ super() }}
+<link type="text/css" rel="stylesheet"
+href="{{ url_for('static', filename='homepage.css')}}" /> 
+{% endblock %})
 
 {% block body %}
-SEARCH BAR HERE
+<div class="search">
+	<h1> Search Books! </h1>
+	<form action= "/search/results/" method="post">
+	  <input type="text" name="book_id"></input>
+	  <input type="submit" value="search"></input>
+	</form>
+</div>
+
+{{ super() }}
+
+{% endblock %}
 
 {% block form1 %}
-<p>LOGIN</p>
+<form action="/account/">
+  <input type="submit" value="LOGIN"></input>
+</form>
 {% endblock %}
 
 {% block form2 %}
-<p>SIGNUP</p>
+<form action="/account/">
+  <input type="submit" value="SIGNUP"></input>
+</form>
 {% endblock %}
-
-{% endblock %}
-

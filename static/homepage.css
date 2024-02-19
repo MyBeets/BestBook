@@ -1,0 +1,21 @@
+.search{
+/*taken from
+https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/
+thanks :) */
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+/* end borrowed code */
+}
+
+.row{
+	position: fixed;
+	top: 33%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.column{
+	padding: 12px;
+}
