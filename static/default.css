@@ -1,0 +1,37 @@
+:root {
+  --back: #ffffff;
+  --dark: #293E3F;
+  --primary: #5B818E;
+  --primaryhighlight: #76A9C4;
+  --secondary: #AFDFB5;
+}
+
+body {
+  background-color: #2c2a30;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1D1B1E;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a{
+  float: right;
+}
+
+li a:hover {
+  background-color: #111111;
+}

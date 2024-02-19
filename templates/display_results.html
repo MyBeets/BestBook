@@ -1,0 +1,12 @@
+{% extends "master.html" %}
+
+{% block body %}
+<h1> displaying results </h1>
+
+<form method="post" action={{ link }}>
+{% for book in results: %}
+    <input type="submit" name="{{book._id}}" value={{book.title}}></input>
+{% endfor %}
+</form>
+
+{% endblock %}

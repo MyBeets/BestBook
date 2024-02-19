@@ -1,0 +1,14 @@
+<head>
+  <link type="text/css" rel="stylesheet"
+       href="{{ url_for('static', filename='searchtest.css')}}" />
+</head>
+<body>
+
+  <form onsubmit="event.preventDefault();" role="search">
+    <label for="search">Search for stuff</label>
+    <input id="search" type="search" placeholder="Search..." autofocus required />
+    <button type="submit" formaction="/search/">Go</button>    
+  </form>
+
+</body>
+

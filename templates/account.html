@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+
+{% block title %}Account{% endblock %}
+
+{% block body %}
+<h1> sign up </h1>
+<form action="/account/signup/" method="post">
+  <input type="text" name="username" value="username" size="20"></input>
+  <input type="text" name="password" value="password" size="12"></input>
+  <input type="submit" value="sign up"></input>
+</form>
+
+<h1> login </h1>
+<form action="/account/login/" method="post">
+  <input type="text" name="username" value="username" size="20"></input>
+  <input type="text" name="password" value="password" size="12"></input>
+  <input type="submit" value="login"></input>
+</form>
+{% endblock %}

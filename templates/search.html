@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}search{% endblock %}
+
+{% block body %}
+<h1> Search book </h1>
+<form action= {{ link }} method="post">
+  <input type="text" name="book_id"></input>
+  <input type="submit" value="search"></input>
+</form>
+
+<h1> Search Author </h1>
+<form action= "/search/authors/" method="post">
+  <input type="text" name="author_name"></input>
+  <input type="submit" value="search"></input>
+</form>
+{% endblock %}

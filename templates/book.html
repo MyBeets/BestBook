@@ -1,0 +1,25 @@
+{% extends "master.html" %}
+
+{% block title %}BOOK{% endblock %}
+
+{% block body %}
+<h1>{{ book.title.replace("."," ") }}</h1>
+<h1>by {{ book.author.replace("."," ")}}</h1>
+
+<h3> Genres: {% for i in range(length): %} 
+    {% if i < length-1 %} {{ book.genres[i] + ","}}
+    {% else %} {{ book.genres[i]}}
+    {% endif %}
+{% endfor %}</h3>
+
+<h3> Edges: {% for e in book.edges: %} {{e}} {% endfor %}</h3>
+
+<form action="/book/button/" method="post">
+    <input type="submit" value="add edge"></input>
+</form>
+
+<form action="/map/" method="post">
+    <input type="submit" value="generate map"></input>
+</form>
+
+{% endblock %}.

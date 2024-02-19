@@ -1,0 +1,17 @@
+#map { 
+	height: 75vh;
+	width: 75vw; 
+}
+.leaflet-container {
+    background: black;
+    outline: 0;
+}
+
+
+
+/* css to customize Leaflet default styles  */
+.custom .leaflet-popup-tip,
+.custom .leaflet-popup-content-wrapper {
+    background: #e93434;
+    color: #ffffff;
+}

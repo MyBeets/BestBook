@@ -1,0 +1,28 @@
+{% extends "master.html" %}
+
+{% block head %} <link type="text/css" rel="stylesheet"
+       href="{{ url_for('static', filename='add.css')}}" /> {% endblock %}
+
+{% block body %}
+<div class="row">
+  <div class="column">
+    <h1> Add book </h1>
+    <form action="/add/add_book/" method="post">
+      <input type="text" name="title" value="title" size="20"></input>
+      <input type="text" name="author" value="author" size="12"></input>
+      <textarea name="genres" rows="4" cols="40">genres separated by a single comma</textarea>
+      <input type="submit" value="add book"></input>
+    </form>
+  </div>
+
+  <div class="column">
+    <h1> Add edge </h1>
+    <form action="/add/add_edge/" method="post">
+      <input type="text" name="book1" value = "book A 'title_author'"></input>
+      <input type="text" name="book2" value = "book B 'title_author'"></input>
+      <input type="submit" value="add edge"></input>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

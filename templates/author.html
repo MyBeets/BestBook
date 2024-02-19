@@ -1,0 +1,10 @@
+{% extends "master.html" %}
+
+{% block title %}AUTHOR{% endblock %}
+
+{% block body %}
+<h1>{{ author._id }}</h1>
+
+<h3> books: {% for e in author.books: %} {{e}} {% endfor %}</h3>
+
+{% endblock %}.

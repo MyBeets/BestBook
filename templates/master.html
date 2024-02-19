@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8" />
+  <title>Book Recommendation System {% block title %}{% endblock %}</title>
+  <link type="text/css" rel="stylesheet"
+       href="{{ url_for('static', filename='default.css')}}" />
+  {% block head %}{% endblock %}
+</head>
+<body>
+<ul>
+  <a href="/">
+    <img src="{{ url_for('static',filename='pup.jpeg')}}" 
+       alt="Insert Logo Here" 
+       style="width:150px;height:50px;">
+  </a>
+  <li><a href="/account/">Account</a></li>
+  <li><a href="/add/">Add</a></li>
+  <li><a href="/search/">Search</a></li>
+</ul>
+
+{% block body %}{% endblock %}
+
+</body>
+</html>
